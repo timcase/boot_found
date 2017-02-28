@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router';
 
 class App extends Component {
   render() {
@@ -14,26 +14,12 @@ class App extends Component {
           </div>
           <div className="top-bar-right">
             <ul className="menu">
-              <li><a href="#">Signup</a></li>
-              <li><a href="#">Login</a></li>
+              <li><Link to='/signup'>Sign up</Link></li>
+              <li><Link to="/login">Login</Link></li>
             </ul>
           </div>
         </div>
-        <div className="row">
-          <div className="large-12 columns">
-            <div className="callout">
-              <h2>Todo so cool, so list</h2>
-              <p>This is a magic web app</p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="large-12 columns">
-            <div className="footer">
-              <p>content</p>
-            </div>
-          </div>
-        </div>
+        {this.props.children}
     </div>
     );
   }

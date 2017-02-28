@@ -1,0 +1,20 @@
+.invalid{
+  color: #FF4136;
+}
+
+.invalid label{
+  color: #FF4136;
+}
+
+.invalid p{
+  color: #FF4136;
+}
+
+.invalid input{
+  border-color: #FF4136;
+}
+
+.alert-callout{
+  background-color: #FF4136;
+  color: #fff;
+}
