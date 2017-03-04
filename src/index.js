@@ -8,6 +8,8 @@ import Signup from './Signup';
 import Login from './Login';
 import TodoList from './TodoList';
 
+window.$(document).foundation()
+
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
